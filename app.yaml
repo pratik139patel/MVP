@@ -1,0 +1,24 @@
+runtime: python38
+
+instance_class: F1
+
+env_variables:
+  MYSQL_USER: 'root'
+  MYSQL_PASSWORD: z1mpLslBvvkKOnmN
+  MYSQL_DB: 'UIUCMVP'
+  MYSQL_HOST: 34.121.180.219
+  MYSQL_SOCKET_DIR: "/cloudsql"
+  CLOUD_SQL_CONNECTION_NAME: "velvety-calling-307103:us-central1:uiucmvp"
+
+handlers:
+- url: /img
+  static_dir: static/img
+  expiration: '10s'
+
+- url: /script
+  static_dir: static/script
+  expiration: '10s'
+
+- url: /styles
+  static_dir: static/styles
+  expiration: '10s'
